@@ -4,4 +4,12 @@ Luego, crea una función llamada mostrarMensaje que declare una variable local l
 el valor "Hola desde el scope local" y que imprima ambos mensajes.
 */
 
-const prompt = require('prompt-sync')();
+let saludoGlobal = "Hola desde el scope global";
+
+function mostrarMensaje() {
+  let saludoLocal = "Hola desde el scope local";
+  console.log(saludoGlobal);
+  console.log(saludoLocal);
+}
+
+mostrarMensaje();
