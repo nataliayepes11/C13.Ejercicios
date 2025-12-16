@@ -3,4 +3,9 @@ Crea una función declarada llamada calcularAreaTriangulo que reciba dos paráme
 Pista: Usa la fórmula: área = (base * altura)/2
 */
 
-const prompt = require('prompt-sync')();
+function calcularAreaTriangulo(base, altura) {
+  return (base * altura) / 2;
+}
+
+let resultado = calcularAreaTriangulo(3, 8);
+console.log("El área del triángulo es: " + resultado);
