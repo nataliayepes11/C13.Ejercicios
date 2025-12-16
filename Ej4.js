@@ -4,4 +4,17 @@ Crea una función declarada llamada esPar que reciba un número y devuelva
 Usa una variable local para guardar el resultado.
 */
 
-const prompt = require('prompt-sync')();
+function esPar(numero) {
+  let resultado;
+
+  if (numero % 2 === 0) {
+    resultado = "Es par";
+  } else {
+    resultado = "Es impar";
+  }
+
+  return resultado;
+}
+
+console.log(esPar(22));
+console.log(esPar(11));
