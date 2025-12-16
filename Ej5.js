@@ -3,4 +3,10 @@ Crea una función expresada llamada concatenarNombres que reciba dos nombres (no
 como parámetros y devuelva el nombre completo concatenado.
 */
 
-const prompt = require('prompt-sync')();
+const concatenarNombres = function(nombre, apellido) {
+  let nombreCompleto = nombre + " " + apellido;
+  return nombreCompleto;
+};
+
+let resultado = concatenarNombres("Natalia", "Yepes");
+console.log(resultado);
