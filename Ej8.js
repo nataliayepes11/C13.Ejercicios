@@ -4,4 +4,7 @@ en grados Celsius y devuelva la temperatura en Fahrenheit.
 Fórmula: Fahrenheit = (Celsius * 9/5) + 32
 */
 
-const prompt = require('prompt-sync')();
+const convertirCelsiusAFahrenheit = function(celsius) {
+  let fahrenheit = (celsius * 9 / 5) + 32;
+  return fahrenheit;
+};
