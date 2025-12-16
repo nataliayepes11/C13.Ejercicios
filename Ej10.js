@@ -3,4 +3,12 @@ Crea una función expresada llamada calcularFactorial que reciba un número y de
 Fórmula del factorial: n! = n * (n - 1) * ... * 1
 */
 
-const prompt = require('prompt-sync')();
+const calcularFactorial = function(numero) {
+  let resultado = 1;
+
+  for (let i = numero; i >= 1; i--) {
+    resultado = resultado * i;
+  }
+
+  return resultado;
+};
